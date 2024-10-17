@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Maui_TP1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Maui_TP1.Views"
+    xmlns:local="clr-namespace:Maui_TP1"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Maui_TP1">
+
+    <TabBar>
+        <ShellContent
+            Title="Accueil"
+            ContentTemplate="{DataTemplate local:MainPage}"
+        />
+        <ShellContent
+            Title="A Propos"
+            ContentTemplate="{DataTemplate local:NewPage1}"
+        />
+        <ShellContent
+            Title="Infos tel"
+            ContentTemplate="{DataTemplate views:vPhone}"
+        />
+        <ShellContent
+            Title="Infos Ecran"
+            ContentTemplate="{DataTemplate views:vEcran}"
+        />
+        <ShellContent
+            Title="Infos Ecran"
+            ContentTemplate="{DataTemplate views:vBatterie}"
+        />
+        <ShellContent 
+            Title="Infos loc"
+            ContentTemplate="{DataTemplate views:vGeolocalisation}"
+        />
+    </TabBar>
+</Shell>
